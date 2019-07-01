@@ -5,11 +5,12 @@ body {
 }
 
 body {
-    background: #9ebbff;
+    background: #a6b9f1;
 }
 
 .container {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu', monospace;
+    font-size: 1.8em;
     color: white;
     display: flex;
     justify-content: center;
@@ -22,17 +23,17 @@ body {
 }
 
 .cursor {
-    animation: blink 1.3s infinite;
-
+    animation: blink 1.2s steps(2, start) infinite;
+    animation-delay: 4s;
     /* align bottom of cursor with bottom of letters*/
     position: relative;
     bottom: 1px;
-
     /* add a bit of space between text and cursor*/
     margin-left: 4px;
 }
 
 @keyframes blink {
-    0% {opacity: 0}
-	49%{opacity: 0}
-	50% {opacity: 1}
+    to {
+        visibility: hidden;
+    }
+}
