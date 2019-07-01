@@ -1,0 +1,43 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: #9ebbff;
+}
+
+.container {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.terminal-symbol {
+    margin-right: 16px;
+}
+
+.terminal {
+    margin-right: 6px;
+}
+
+.cursor {
+    opacity: 1.3;
+    animation-name: blink;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
