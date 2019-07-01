@@ -21,23 +21,18 @@ body {
     margin-right: 16px;
 }
 
-.terminal {
-    margin-right: 6px;
-}
-
 .cursor {
-    opacity: 1.3;
-    animation-name: blink;
-    animation-duration: 1.3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    animation: blink 1.3s infinite;
+
+    /* align bottom of cursor with bottom of letters*/
+    position: relative;
+    bottom: 1px;
+
+    /* add a bit of space between text and cursor*/
+    margin-left: 4px;
 }
 
 @keyframes blink {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
+    0% {opacity: 0}
+	49%{opacity: 0}
+	50% {opacity: 1}
