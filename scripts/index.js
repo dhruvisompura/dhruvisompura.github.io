@@ -1,4 +1,11 @@
-var txt = 'wget dhruvisompura.com';
+var commands = [
+    'wget dhruvisompura.com',
+    'curl dhruvisompura.com',
+    'Dhruvi Sompura'
+];
+var commands_index = Math.floor(Math.random() * commands.length);
+var txt = commands[commands_index];
+
 var startDelay = 900; // delay typewriting effect start
 var start = false;
 var speed = 130; // speed in milliseconds
@@ -14,8 +21,6 @@ function type() {
         );
         i++;
         setTimeout(type, speed);
-    } else if (i === txt.length) {
-        setTimeout();
     }
 }
 
