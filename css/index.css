@@ -24,7 +24,6 @@ body {
 
 .cursor {
     animation: blink 1.2s steps(2, start) infinite;
-    animation-delay: 4s;
     /* align bottom of cursor with bottom of letters*/
     position: relative;
     bottom: 1px;
