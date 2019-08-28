@@ -1,0 +1,59 @@
+html,
+body {
+    position: relative;
+    margin: 0 auto;
+    max-width: 50em;
+    padding: 3em 1em;
+
+    font-family: 'Ubuntu', monospace;
+    color: #91a6ff;
+}
+
+.toggle {
+    /* sizing & style */
+    width: 65px;
+    height: 30px;
+    background: #e5eaff;
+    border: 2px solid;
+    border-radius: 50px;
+
+    /* positioning */
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.toggle label {
+    display: block;
+
+    /* sizing & style */
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    border-radius: 50%;
+    background: #fff;
+
+    /* positioning */
+    position: absolute;
+    z-index: 1; /* stack checkbox replacement over background */
+    top: 3px;
+    left: 8px;
+
+    cursor: pointer;
+
+    transition: all 0.5s ease;
+}
+
+.toggle label:before {
+    content: '';
+}
+
+.toggle input[type='checkbox'] {
+    /* hide checkbox */
+    display: none;
+}
+
+.toggle input[type='checkbox']:checked + label {
+    left: 32px;
+    background: #91a6ff;
+}
