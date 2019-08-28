@@ -24,6 +24,16 @@ var backspace = false;
 var displayHelpText = false;
 
 function type() {
+    // if user ever clicks enter button, navigate to main page
+    document.addEventListener('keyup', function(event) {
+        if (event.keyCode === 13) {
+            // Cancel the default action, if needed
+            event.preventDefault();
+            // Trigger reload of main page
+            window.location = 'main.html';
+        }
+    });
+
     // Determine if typing delay has been completed
     if (!start) {
         start = true;
