@@ -5,13 +5,13 @@ body {
 }
 
 .index-page {
-    background: #91a6ff;
+    background: #121212;
 }
 
 .container {
     font-family: 'Ubuntu', monospace;
     font-size: 1.8em;
-    color: white;
+    color: #ffeb3b;
     display: flex;
     justify-content: center;
     align-items: center;

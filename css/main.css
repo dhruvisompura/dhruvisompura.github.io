@@ -7,10 +7,15 @@ body {
 
     font-size: 1em;
     font-family: 'Ubuntu', monospace;
+    color: #ffeb3b;
 }
 
+.main-page {
+    background: #121212;
 }
 
+a {
+    color: #ffeb3b;
 }
 
 .contact {
