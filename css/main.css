@@ -8,55 +8,8 @@ body {
     font-family: 'Ubuntu', monospace;
 }
 
-.toggle {
-    /* position */
-    position: absolute;
-    top: 15px;
-    right: 15px;
 }
 
-/* label */
-.switch {
-    /* position is relative so :after can be utilized */
-    position: relative;
-
-    /* setting width & height */
-    display: inline-block;
-    width: 65px;
-    height: 30px;
-
-    /* styling */
-    background-color: #e5eaff;
-    border: 2px solid #91a6ff;
-    border-radius: 50px;
 }
 
-.switch:after {
-    /* label has no text */
-    content: '';
-
-    /* position the bubble */
-    position: absolute;
-    top: 3px;
-    left: 8px;
-
-    /* bubble size */
-    width: 20px;
-    height: 20px;
-    border: 2px solid #91a6ff;
-    border-radius: 50%;
-    background: #fff;
-
-    /* toggle effect transition */
-    transition: all 0.5s ease;
-}
-
-/* if checkbox is checked then apply these transitions to switch*/
-.gui-mode:checked + .switch:after {
-    left: 31px;
-    background: #91a6ff;
-}
-
-.gui-mode {
-    display: none;
 }
